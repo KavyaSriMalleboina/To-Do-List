@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#heading{
+    color:rgb(237, 225, 247);
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    width: 600px;
+    margin-bottom: 75px;
+    font-size: 50px;
+    box-shadow: 0px 0px 10px rgb(229, 210, 246);
+    border-radius: 10px;
+    text-shadow: 2px 2px 3px rgb(218, 159, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#addBtn:hover{
+    background-color: rgb(61, 188, 80);
+    box-shadow: 0px 0px 10px rgb(132, 247, 149);
+    color: rgb(255, 255, 255);
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px none rgb(229, 210, 246);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(229, 210, 246);
+    width: 600px;
+    padding: 25px;
+}
+#inputContainer{
+    display: flex;
+    margin-bottom: 20px;
+}
+#addBtn{
+    margin-left: 30px;
+    padding: 5px 10px;
+    background-color: rgb(49, 212, 73);
+    border-radius: 5px;
+    color: rgb(23, 9, 31);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.check{
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.check:hover{
+    padding: 1px;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+.actions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.star {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 25px;
+    padding-bottom: 4px;
+}
+.star:hover {
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#taskList li:hover{
+    background-color: rgb(72, 20, 118);
+    border-radius: 10px;
+    font-size: 22px;
+}
+.task{
+    display: flex;
+    align-items: center;
+}
+.delete{
+    color: rgb(248, 162, 162);
+    cursor: pointer;
+    font-family:cursive;
+}
+.delete:hover{
+    text-shadow: 0px 0px 5px rgb(248, 162, 162);
+    font-size: 22px;
+}
+#taskList{
+    color: rgb(255, 255, 255);
+    list-style:none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 5px solid rgb(195, 132, 247);
+    outline: none;
+}
+input:focus{
+    border-color: rgb(132, 247, 149);
+    box-shadow: 0px 0px 10px rgb(132, 247, 149);
+    transform: scale(1.075);
+}
+.completed .check{
+    background-color: rgb(92, 243, 115);
+}
+.completed .check::after{
+    content: '✓';
+    color: white;
+    position: absolute;
+    font-size: 14px;
+    top: 2px;
+    left: 4px;
+}
+.animate_animated{
+    animation-duration: 0.5s !important;
+}
+#inputContainer{
+    border: 2px solid rgb(229, 210, 246);
+    border-radius: 10px;
+    padding: 25px;
+    width: 500px;
+    justify-content: center;
+    background-color: rgb(33, 6, 57);
+}
+#inputContainer:hover{
+    box-shadow: 0px 0px 10px rgb(229, 210, 246);
+}
